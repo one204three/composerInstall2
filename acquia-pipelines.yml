@@ -15,6 +15,3 @@ events:
             - echo 'STARTED INSTALL'
             - composer install
             - echo 'FINISHED INSTALL'
-ssh-keys:
-  my_module:
-    secure: SCxLERS9GcOrgz72zZwqBiCIx7GsWpP2Nxyx3kpGwBIc27rKqCblXqkv2MxM...
