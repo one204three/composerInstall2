@@ -1,0 +1,20 @@
+version: 1.1.0
+
+variables:
+  global:
+   ADMIN_USERNAME: ist-admin
+   ADMIN_PASSWORD:
+    secure: 2ac1GbiU1coNBqUEngi3HJ3QT/18bUrYKK5Jl4orovbYVB/DGEwRyB+NUH7A7bV2cum9M8r3o9wWO3px5FR5jasX8kZ7FeyOtqXgYEwM6wnPhnraLZgXFI68p7VNlwd9MJ1ZsiSxTgT976cSAPfCYZFucEgUl1Z51Qqg+8MSWo5GXHavg8xxoTZusX/z1ptbDDcKcs4LiN0mIZ5oKbcfq4t6YMIgo+/zolF0tURUASJD+hcZG65VLdgEVec1wm94kszN6gZ6yFToysYplH5XU0e25UyMSxmfGpeu63Qp1gK70dLVTJwaPwSbMhlrW9Egr8M0aCUMQOwaFK5iXOnSao7CORA6pv2TS/Rbrf3xyI4GpRpzYd5HV73sKYvaujCFKnBufrKYsYPCF7TH97K2XECcr74BltRBp1BjqvqXj9digX4U8Ke9V7xFtYG1qpX8MMqpfRwujrReF/2XkzIrk6/zke2zShrn5ZOj5bRcph2TLCDYc+bT59dUd517+fDF9Q/olY3NEa/DGrW48UNlC1VxwO4OqUfUJ9QhzSHbA2LfjB1oksepmuve3zzoKNOOduQsag7hPAZhQD4Ur/DjgYCJvTGVOulAfxQB0kyddqsTzeEUWYFEHslRCIb7jLXDhOSOCmGraT7he+aT0rFzFjtpusElGj4i+GQgZweliMFUOg=gdpglP8ZOaZ9/CcB9BHnBuFsKMoB8WtT6w2spa+KkkQ1jFtDFWKNbRMRi7+4VchnHlKKrRcJhg3LKnv69V2K0LwgHFXYfmMjwDRJqEC2UKKVfJq5bZfk3rL0yLl2DFTi
+
+events:
+ build:
+    steps:
+      - build:
+          type: script
+          script:
+            - echo 'STARTED INSTALL'
+            - composer install
+            - echo 'FINISHED INSTALL'
+ssh-keys:
+  my_module:
+    secure: SCxLERS9GcOrgz72zZwqBiCIx7GsWpP2Nxyx3kpGwBIc27rKqCblXqkv2MxM...
